@@ -1,4 +1,8 @@
-
+<html>
+<head>
+	<title></title>
+</head>
+<body>
 <?php
 
 function addForm($supplier_name, $supplier_contactperson, $supplier_address, $error)
@@ -64,3 +68,6 @@ else{
  addForm('','','', '');
 }
 ?>
+</body>
+</html>
+

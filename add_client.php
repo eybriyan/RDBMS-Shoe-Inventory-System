@@ -1,3 +1,8 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
 <?php
 
 function addForm($client_name, $client_contactperson, $client_address, $error)
@@ -61,3 +66,5 @@ else{
 }
 
 ?>
+</body>
+</html>

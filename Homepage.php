@@ -1,4 +1,7 @@
-<?php
+<html>
+<head>
+	<title>Home</title>
+	<?php
 {
 	include 'home.php';
 	connect();
@@ -16,7 +19,7 @@ function ViewClient() {
 	 </tr>';
 	  while($row = mysql_fetch_array( $viewquery )) {
 		echo '<tr>
-		<td><a href="view_client.php?client_id=' . $row['client_id']. '">' . $row['client_name'] . '</a></td>
+		<td><a href="client_transaction.php?client_id=' . $row['client_id']. '">' . $row['client_name'] . '</a></td>
 		<td>' . $row['client_contactperson'] . '</td>
 		<td>' . $row['client_address'] . '</td>
 		<td>
@@ -74,3 +77,8 @@ function ViewSupplier(){
 	  </div>';
 }
 ?>
+</head>
+<body>
+</body>
+</html>
+

@@ -29,7 +29,7 @@ function connect(){
  	  $row = mysql_fetch_array($query);
  	 if(!empty($row['username']) AND !empty($row['pass'])) 
  	 	{ 
- 	 		//$_SESSION['username'] = $row['pass']; 
+ 	 		$_SESSION['username'] = $row['pass']; 
  	 		//header("Location: viewhomepage.php");
  	 		echo '<h3> Success Login </h3>';
  	 		echo "Hi " . $row['username'] .'<br>';
